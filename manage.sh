@@ -3,7 +3,7 @@ set -e
 
 IN_OPERATION="${1}"
 BASE_DIR=$(dirname $(readlink -f "${0}"))
-DOCKER_COMPOSE_CONF="${BASE_DIR}/docker-compose.yaml"
+DOCKER_COMPOSE_CONF="${BASE_DIR}/compose.yml"
 
 source "${BASE_DIR}/env.config"
 
@@ -26,7 +26,7 @@ function init_env () {
 
 
 function check_ssl_key () {
-  if [[ -f "${BASE_DIR}/nginx/ssl/ssl.key"  &&  -f "${BASE_DIR}/nginx/ssl/ssl.crt" ]]; then
+  if [[ -f "${BASE_DIR}/nginx/ssl/healbewildcard.key"  &&  -f "${BASE_DIR}/nginx/ssl/healbewildcard.crt" ]]; then
     echo "SSL keys file found, continue..."
   else
     echo "No ssl files found. Exiting"

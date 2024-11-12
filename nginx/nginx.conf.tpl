@@ -38,8 +38,8 @@ http {
 
       ssl on;
 
-      ssl_certificate           /etc/nginx/ssl/ssl.crt;
-      ssl_certificate_key       /etc/nginx/ssl/ssl.key;
+      ssl_certificate           /etc/nginx/ssl/healbewildcard.crt;
+      ssl_certificate_key       /etc/nginx/ssl/healbewildcard.key;
 
       ssl_verify_client         off;
 
@@ -71,8 +71,8 @@ http {
 
       ssl on;
 
-      ssl_certificate           /etc/nginx/ssl/ssl.crt;
-      ssl_certificate_key       /etc/nginx/ssl/ssl.key;
+      ssl_certificate           /etc/nginx/ssl/healbewildcard.crt;
+      ssl_certificate_key       /etc/nginx/ssl/healbewildcard.key;
 
       ssl_verify_client         off;
 
@@ -111,8 +111,8 @@ http {
 
       ssl on;
 
-      ssl_certificate           /etc/nginx/ssl/ssl.crt;
-      ssl_certificate_key       /etc/nginx/ssl/ssl.key;
+      ssl_certificate           /etc/nginx/ssl/healbewildcard.crt;
+      ssl_certificate_key       /etc/nginx/ssl/healbewildcard.key;
 
       ssl_verify_client         off;
 
